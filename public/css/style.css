@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: aquamarine;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    height:1000px;
+    width:800px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    font-size: 17px;
+    
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    color:tomato;
+    padding:10px;
+    border-bottom: 1px solid #afafaf;
+}
+
+table{
+    width:95%;
+    margin: 5px 20px; 
+    padding:10px;
+    border-collapse: collapse;
+    
+
+}
+
+table td{
+    border: 1px solid grey;
+    
+}
+
+table thead td{
+    padding: 1rem;
+    background-color: lightslategray;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+table tbody td{
+    padding: 1.0rem;
+}
+
+table tbody tr:nth-child(even){
+    background-color: rgb(172, 189, 206);
+}
+
+.edit,.delete,.addbtn{
+    text-decoration: none; 
+    color: white;
+    background-color: blueviolet;
+    width:60px;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.delete{
+    background-color: red;
+}
+
+p{
+    text-align: right;
+    padding: 1rem;
+     
+}
+
+.addbtn{
+    background-color: rgb(55, 149, 43);
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    padding:5px;
+    margin-top: 10px;
+    
+}
+
+.form-group label,
+.form-group input{
+    display: block;
+    height:28px;
+    width:300px;
+}
+
+button,.viewbtn{
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+    border:none;
+    background-color: blueviolet;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.alert{
+    display: block;
+    padding:5px;
+    background: forestgreen;
+    border-radius: 3px;
+    height:30px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,68 @@
+<h3>Student Management System</h3>
+<p><a href="/adduser" class="addbtn">Add User</a></p>
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+            <tr>
+                <td>{{this.ID}}</td>
+                <td>{{this.NAME}}</td>
+                <td>{{this.AGE}}</td>
+                <td>{{this.CITY}}</td>
+                <td><a class="edit" href="/edituser/{{this.ID}}">Edit</a></td>
+                <td><a class="delete" onclick="return confirm('Are you sure?')" href="/deleteuser/{{this.ID}}">Delete</a></td>
+            </tr>
+        {{/each}}
+       <!-- <tr>
+
+            <td>1</td>
+            <td>Ram</td>
+            <td>20</td>
+            <td>Salem</td>
+            <td><a href="" class="edit">Edit</a></td>
+            <td><a href="" class="delete">Delete</a></td>
+        </tr>
+         <tr>
+            <td>2</td>
+            <td>Ram</td>
+            <td>20</td>
+            <td>Salem</td>
+            <td><a href="" class="edit">Edit</a></td>
+            <td><a href="" class="delete">Delete</a></td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>Ram</td>
+            <td>20</td>
+            <td>Salem</td>
+            <td><a href="" class="edit">Edit</a></td>
+            <td><a href="" class="delete">Delete</a></td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>20</td>
+            <td>Salem</td>
+            <td><a href="" class="edit">Edit</a></td>
+            <td><a href="" class="delete">Delete</a></td>
+        </tr>
+         <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>20</td>
+            <td>Salem</td>
+            <td><a href="" class="edit">Edit</a></td>
+            <td><a href="" class="delete">Delete</a></td>
+        </tr> -->
+    </tbody>
+</table>
+ 
